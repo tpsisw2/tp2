@@ -1,0 +1,78 @@
+\section{Análisis de Riesgos}
+\uline{\it{Riesgo 1}}\\*
+{\bf{Descripción:}} El análisis de comentarios en video y sonido es complejo y es posible que no se cumpla en tiempo con este requerimiento.\\*
+{\bf{Probabilidad:}} Alta\\*
+{\bf{Impacto:}} Bajo\\*
+{\bf{Exposición:}} Media\\*
+{\bf{Mitigación:}} Comenzar cuanto antes con el desarrollo de éstas funcionalidades para saber lo mas pronto posible si se va a llegar a cumplir con este objetivo.\\*
+{\bf{Plan de contingencia:}} Hacer que el sistema pueda funcionar sin éstos medios de comentario y que se puedan agregar posteriormente.\\
+\newline
+\uline{\it{Riesgo 2}}\\*
+{\bf{Descripción:}} El login con integración a redes sociales, en caso de fallar de estos sistemas externos,  impediría la autenticación en el sistema.\\*
+{\bf{Probabilidad:}} Baja\\*
+{\bf{Impacto:}} Alto\\*
+{\bf{Exposición:}} Media\\*
+{\bf{Mitigación:}} En caso de que los sistemas externos no respondan, el sistema debe estar preparado para poder autenticar los usuarios independientemente de ellos.\\*
+{\bf{Plan de contingencia:}} Hacer el login interno al sistema sin integración con redes sociales.\\
+\newline
+\uline{\it{Riesgo 3}}\\*
+{\bf{Descripción:}} El reconocimiento de ironías, discriminación y demás criterios que no puedan ser detectados por algoritmos requieren el control de una persona. Se corre el riesgo de que la cantidad de mensajes con estas características exceda la capacidad del procesarlos en función del personal disponible.\\*
+{\bf{Probabilidad:}} Media\\*
+{\bf{Impacto:}} Medio\\*
+{\bf{Exposición:}} Medio\\*
+{\bf{Mitigación:}} Asignar presupuesto para una posible contratación de personal extra.\\*
+{\bf{Plan de contingencia:}} Limitar la cantidad mensajes que se pueden realizar hasta encontrar una solución mejor.\\
+\newline
+\uline{\it{Riesgo 4}}\\*
+{\bf{Descripción:}} Los actuales sponsors de virus y datamining podrían no estar satisfechos con el producto y retirar su apoyo al proyecto\\*
+{\bf{Probabilidad:}} Media\\*
+{\bf{Impacto:}} Alto\\*
+{\bf{Exposición:}} Alto\\*
+{\bf{Mitigación:}} Comprometer mediante un contrato a los sponsors al apoyo del proyecto a cambio de cumplir con los mínimos atributos de calidad que soliciten.\\*
+{\bf{Plan de contingencia:}} Buscar otros sponsors que quieran publicitar en las páginas del sistema.\\
+\newline
+\uline{\it{Riesgo 5}}\\*
+{\bf{Descripcion:}} El sistema de voto podría ser vulnerable a ataques en los cuales por ejémplo un usuario vote negativamente a otro usuario descontroladamente, o se vote a sí mismo sin control.\\*
+{\bf{Probabilidad:}} Media\\*
+{\bf{Impacto:}} Bajo\\*
+{\bf{Exposición:}} Baja\\*
+{\bf{Mitigación:}} Poner las medidas de seguridad necesarias para impedir que un mismo usuario vote mas de una vez por comentario.\\*
+{\bf{Plan de contingencia:}} Analizar la posiblidad de integrar algún servicio externo altamente confiable (que tenga mucha experiencia en este asunto) para la realización de comentarios en el sistema.\\
+\newline
+\uline{\it{Riesgo 6}}\\*
+{\bf{Descripcion:}} Los datos transmitidos a la empresa de datamining pueden ser interceptados por personas ajenas al gobierno o la empresa.\\*
+{\bf{Probabilidad:}} Media\\*
+{\bf{Impacto:}} Alto\\*
+{\bf{Exposición:}} Alta\\*
+{\bf{Mitigación:}} Transmitir los datos encriptados por la red\\*
+{\bf{Plan de contingencia:}} Hacer una descarga manual de los datos sin necesidad de transmitirlos por internet.\\
+\newline
+\uline{\it{Riesgo 7}}\\*
+{\bf{Descripcion:}} Si el servidor de comentario falla puede perjudicar el pago de sueldos.\\*
+{\bf{Probabilidad:}} Alta\\*
+{\bf{Impacto:}} Alto\\*
+{\bf{Exposición:}} Alta\\*
+{\bf{Mitigación:}} Separar estas tareas en servidores distintos de manera que no se afecten mutuamente.\\*
+{\bf{Plan de contingencia:}} Aumentar la capacidad de los servidores de manera que puedan procesar ambas tareas sin problemas.\\
+\newline
+\uline{\it{Riesgo 8}}\\*
+Al ser pocos los integrantes se corre el riesgo de que alguno no pueda trabajar en el desarrollo\\
+\newline
+\uline{\it{Riesgo 9}}\\*
+Es posible que la gente no esté interesada en subir videos 3d ya que su realización es costosa y se haga un esfuerzo sin sentido en desarrollar esta posibilidad.\\
+\newline
+\uline{\it{Riesgo 10}}\\*
+Los moderadores no aprendan a tiempo el manejo del sistema y a aplicar correctamente los criterios de moderación pedidos.\\
+\newline
+\uline{\it{Riesgo 11}}\\*
+La empresa de data mining difunda o se le filtren datos privados de los comentarios que obtienen del sistema\\
+\newline
+\uline{\it{Riesgo 12}}\\*
+Los desvíos en el presupuesto debidos a planes de contingencia exceda el disponible.\\
+\newline
+\uline{\it{Riesgo 13}}\\*
+La posibilidad de personalizar los criterios de moderación puede crear una ola de nuevos criterios que no puedan ser filtrados con algoritmos y se deba contratar mucho personal para poder dar abasto con la tarea\\
+\newline
+\uline{\it{Riesgo 14}}\\*
+Que el sistema se vuelva tan restrictivo que el público pierda el interés en realizar comentarios debido a la censura.\\
+

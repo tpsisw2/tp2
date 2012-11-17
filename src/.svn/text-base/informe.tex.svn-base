@@ -1,0 +1,31 @@
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+%\usepackage{float}
+\usepackage{../packets/caratula}
+\usepackage{enumerate}
+\renewcommand{\baselinestretch}{1}
+
+\hoffset=-2cm
+\textwidth=16cm
+\parskip=1ex
+\pagestyle{fancy}
+\addtolength{\headheight}{1pt}
+\lhead{Ingeniería del Software II}
+\rhead{$2$do cuatrimestre de $2012$}
+
+\begin{document}
+\input{caratula.tex}
+\tableofcontents
+\newpage
+\input{contenido.tex}
+\end{document}
+

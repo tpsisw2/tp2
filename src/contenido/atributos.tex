@@ -1,0 +1,82 @@
+\section{Atributos de Calidad}
+
+\subsection{Atributos de Calidad Identificados}
+
+\begin{spacing}{1.5}
+Según el análisis del proyecto a ser realizado pudimos destacar ciertos atributos de calidad que surgieron de realizar un QAW con los stakeholders. Luego de intercambiar ideas y analizar los requerimientos del trabajo a realizarse concluimos que nuestro proyecto tendrá los siguientes atributos de calidad.
+\end{spacing}
+
+\begin{enumerate}
+\item {\bf Atributo: Usabilidad}\\
+Se le dara importancia a las interacciones que hay entre usuarios registrados del sistema. Cada usuario podrá elegir ver los comentarios de los que han sido determinado como sus amigos. Por otra parte vamos a implementar toda una interfaz sencilla que promueva al usuario a seguir leyendo comentarios de sus amigos y/o amigos de amigos.
+
+\item {\bf Atributo: Usabilidad}
+Para que la página sea más entretenida se decidió que cada usuario pueda tener su reputación. Para manejar las cuentas de cada usuario va a ser necesario tomar ciertos recaudos en cuanto a la seguridad. 
+Decidimos permitir al usuario autenticarse con una cuenta de nuestro sistema o con una cuenta de las redes sociales mas importantes. Por otro lado, poseer contraseñas de los usuarios nos obliga a guardarlas de manera segura.
+
+\item {\bf Atributo: Seguridad} \\
+Todos los comentarios deberían estar controlados, evitando que algun usuario o nuestro servidor se infecte por leer o hacer click en algun link que esté en algun comentario.
+
+\item {\bf Atributo: Disponibilidad}\\
+Los equipos que manejan este sistema estan por llegar proximamente al pico de carga. Si esto sucediera, el servidor podria colapsar, generando un período de tiempo de inactividad de nuestra aplicación.
+"
+\end{enumerate}
+
+\subsection{Escenarios de los Atributos Identificados}
+
+\begin{enumerate}
+\item {\bf Atributo: Usabilidad}
+    \begin{itemize}
+        \item {\it Fuente:} usuario.
+        \item {\it Estimulo:} hace click en un boton de filtrar por amigos y selecciona l@s amig@s por los que quiere filtrarla.
+        \item {\it Artefacto:} base de datos.
+        \item {\it Entorno:} sistema de almacenamiento y gestion de comentarios.
+        \item {\it Respuesta:} la base de datos devuelve todos los comentarios deseados por el usuario.
+        \item {\it Medida de Respuesta:} el usuario observa en la pantalla de su monitor los comentarios que han sido realizados por l@s amig@s que este seleccionó.
+    \end{itemize}
+\item {\bf Atributo: Seguridad}
+    \begin{itemize}
+        \item {\it Fuente:} usuario que opta por autenticarse.
+        \item {\it Estimulo:} el usuario envia su nombre de usuario y password para confirmar que realmente es esa persona que dice ser.
+        \item {\it Artefacto:} base de datos con todos los usuarios y passwords almacenados de manera segura.
+        \item {\it Entorno:} subsistema de autenticación
+        \item {\it Respuesta:} el subsistema verifica que el password hasheado sea el mismo que el password hasheado almacenado en la base de datos.
+        \item {\it Medida de Respuesta:} de acuerdo a la respuesta, el usuario estará ahora logueado en la página como el usuario quien dijo ser, o le pedirá que vuelva a introducir su usuario y password en caso de que la respuesta informe una autenticación fallida.
+    \end{itemize}
+\item {\bf Atributo: Usabilidad}
+    \begin{itemize}
+        \item {\it Fuente:} usuario que opta por autenticarse con su cuenta de facebook.
+        \item {\it Estimulo:} usuario hace click en el boton de conectarse mediante facebook y coloca su usuario y contraseña de facebook.
+        \item {\it Artefacto:} API de facebook connect.
+        \item {\it Entorno:} subsistema de autenticacion
+        \item {\it Respuesta:} 
+        \item {\it Medida de Respuesta:}
+    \end{itemize}
+\item {\bf Atributo: Seguridad}
+    \begin{itemize}
+        \item {\it Fuente:} 
+        \item {\it Estimulo:} 
+        \item {\it Artefacto:} 
+        \item {\it Entorno:}
+        \item {\it Respuesta:}
+        \item {\it Medida de Respuesta:}
+    \end{itemize}
+\item {\bf Atributo: Usabilidad}
+    \begin{itemize}
+        \item {\it Fuente:} usuario registrado.
+        \item {\it Estimulo:} hace "me gusta" al comentario de otro usuario que comentó previamente.
+        \item {\it Artefacto:} base de datos de los usuarios.
+        \item {\it Entorno:} subsistema de reputación de los usuarios.
+        \item {\it Respuesta:} se realizan los cálculos necesarios para mejorar la reputación del usuario que recibió el "me gusta"
+        \item {\it Medida de Respuesta:} Estos datos se almacenan en la base de datos de usuarios.
+    \end{itemize}
+\item {\bf Atributo: Disponibilidad}
+    \begin{itemize}
+        \item {\it Fuente:} 
+        \item {\it Estimulo:} 
+        \item {\it Artefacto:} 
+        \item {\it Entorno:}
+        \item {\it Respuesta:}
+        \item {\it Medida de Respuesta:}
+    \end{itemize}
+

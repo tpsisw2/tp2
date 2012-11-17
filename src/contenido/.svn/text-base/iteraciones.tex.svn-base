@@ -1,0 +1,168 @@
+\section{Detalle primera iteración}
+
+\subsection{Descripcion alto nivel de casos de uso}
+
+\begin{enumerate}
+    \item {\bf{Posteando comentarios en video 2D}}\\
+    Se refiere a la acción de permitirle al usuario hacer comentarios ingresando videos en formato tradicional.
+    El usuario deberá seleccionar esa opción y luego cargar un video en un formato válido. El sistema analizará el video,
+    y detectará los insultos de acuerdo a los filtros establecidos, indicando mensaje de error en caso de que exista y 
+    auditando la justificación en una base de datos.
+    \item {\bf{Posteando comentarios en video 3D}}\\
+    Se refiere a la acción de permitirle al usuario hacer comentarios ingresando videos en formato tridimencional.
+    El usuario deberá seleccionar esa opción y luego cargar un video en un formato válido. El sistema analizará el video,
+    y detectará los insultos de acuerdo a los filtros establecidos, indicando mensaje de error en caso de que exista y 
+    auditando la justificación en una base de datos.
+    \item {\bf{Posteando comentarios en sonido}} \\
+    Se refiere a la acción de permitirle al usuario hacer comentarios ingresando audios en formato digital.
+    El usuario deberá seleccionar esa opción y luego cargar un audio en un formato válido. El sistema analizará el sonido,
+    y detectará los insultos de acuerdo a los filtros establecidos, indicando mensaje de error en caso de que exista y 
+    auditando la justificación en una base de datos.
+    \item {\bf{Realizando registración con usuario de nuestro sistema}} \\
+    Se refiere a la tarea en la que un usuario ingresa al sistema y accede a un formulario de registración completando sus
+    datos en el mismo. El sistema tomará esos datos y los alamacenará en una base de datos. El sistema deberá encriptar la 
+    clave de usuario para que no sea facilmente descubierta.
+    \item {\bf{Realizando login con usuario de nuestro sistema}} \\
+    Se refiere a la tarea en la que un usuario registrado accede a la pantalla de login ingresando usuario y clave para 
+    autenticarse en el sistema. Internamente se cruzará la información ingresada con la alamacenada en base de datos
+     
+\newpage
+\subsection{Lista de tareas primera iteración}
+
+
+\noindent{\bf{CU\#01 Posteando comentarios en video 2D}}
+\begin{itemize}
+    \item CU\#01-T01 Análisis de lecturas de videos tradicionales
+    \item CU\#01-T02 Investigar codecs que interpretan videos 2D
+    \item CU\#01-T03 Configuracion de desarrollo y base de datos
+    \item CU\#01-T04 Implementacion de procesamiento de videos
+    \begin{itemize}
+        \item CU\#01-T04-st01 Adaptacion del sistema que permita recepción de videos
+        \item CU\#01-T04-st02 Procesar video ingresado por el usuario
+        \item CU\#01-T04-st03 Parsear diálogos
+        \item CU\#01-T04-st04 Analizar imágenes 
+        \item CU\#01-T04-st05 Justificacion de rechazo y almacenamiento de la misma
+    \end{itemize}
+    \item CU\#01-T05 Configuracion entorno de testeo
+    \item CU\#01-T06 Integracion y testeo de videos 2D
+\end{itemize}
+    
+                   
+\noindent{\bf{CU\#02 Posteando comentarios en video 3D}}
+\begin{itemize}
+    \item CU\#02-T01 Análisis de lecturas de videos con tecnologia tridimensional
+    \item CU\#02-T02 Investigar codecs que interpretan videos 3D
+    \item CU\#02-T03 Configuracion de desarrollo y base de datos
+    \item CU\#02-T04 Implementacion de procesamiento de videos
+    \begin{itemize}
+        \item CU\#02-T04-st01 Adaptacion del sistema que permita recepción de videos 3D
+        \item CU\#02-T04-st02 Procesar video ingresado por el usuario
+        \item CU\#02-T04-st03 Parsear diálogos
+        \item CU\#02-T04-st04 Analizar imágenes 
+        \item CU\#02-T04-st05 Justificacion de rechazo y almacenamiento de la misma
+    \end{itemize}
+    \item CU\#02-T05 Configuracion entorno de testeo
+    \item CU\#02-T06 Integracion y testeo de videos 3D  
+\end{itemize}
+
+
+\noindent{\bf{CU\#03 Posteando comentarios en sonido}}
+\begin{itemize}
+    \item CU\#03-T01 Análisis de lecturas de sonidos
+    \item CU\#03-T02 Investigar codecs de audio permitidos
+    \item CU\#03-T03 Configuracion de desarrollo y base de datos
+    \item CU\#03-T04 Implementacion de procesamiento de videos
+    \begin{itemize}
+        \item CU\#03-T04-st01 Adaptacion del sistema que permita recepción de sonidos
+        \item CU\#03-T04-st02 Procesar audio ingresado por el usuario
+        \item CU\#03-T04-st03 Parsear diálogos
+        \item CU\#03-T04-st04 Justificacion de rechazo y almacenamiento de la misma
+    \end{itemize}
+    \item CU\#03-T05 Configuración entorno de testeo
+    \item CU\#03-T06 Integración y testeo de sonidos                      
+\end{itemize}
+
+
+\noindent{\bf{CU\#07 Realizando registración con usuario de nuestro sistema}}
+\begin{itemize}
+    \item CU\#07-T01 Configuración base de datos de Usuarios
+    \item CU\#07-T02 Configuración seguridad de la base de datos
+    \begin{itemize}
+        \item CU\#07-T02-st01 Encriptación passwords
+        \item CU\#07-T02-st02 Protección contra inyecciones SQL
+        \item CU\#07-T02-st03 Configuración de roles de base de datos
+    \end{itemize}
+    \item CU\#07-T03 Configuración entorno de desarrollo
+    \begin{itemize}
+        \item CU\#07-T03-st01 Mostrar formulario para completar datos
+        \item CU\#07-T03-st02 Almacenar en base de datos el nuevo usuario registrado
+    \end{itemize}
+    \item CU\#07-T04 Configuración entorno de testeo
+    \item CU\#07-T05 Integración y testeo de registracion de usuarios
+\end{itemize}
+
+\noindent{\bf{CU\#8 Realizando login con usuario de nuestro sistema}}
+
+\begin{itemize}
+    \item CU\#8-T01 Configuración entorno de desarrollo
+    \begin{itemize}
+        \item CU\#8-T01-st01 Mostrar campo para ingresar User y Password
+        \item CU\#8-T01-st02 Verificar los datos ingresados
+        \item CU\#8-T01-st03 Hasheo de password
+    \end{itemize}
+    \item CU\#8-T02 Configuración entorno de testeo
+    \item CU\#8-T03 Integración y testeo del login
+\end{itemize}
+
+\section{Estimación de tiempos y diagrama de Gantt}
+
+\includegraphics[scale=0.6, angle=90]{../img/CU01.png}\\
+%\includegraphics[scale=0.6]{../img/CU02.png}\\
+%\includegraphics[scale=0.6]{../img/CU04.png}\\
+%\includegraphics[scale=0.6]{../img/C03.png}\\
+%\includegraphics[scale=0.6]{../img/Gannt.png}\\
+
+
+\section{Segunda iteración}
+       
+\noindent{\bf{CU\#4 Posteando comentarios en imagenes}}
+
+\noindent{\bf{CU\#9 Realizando login mediante Facebook}}
+
+\noindent{\bf{CU\#5 Posteando comentarios en texto con formato}}
+
+\noindent{\bf{CU\#10 Realizando login mediante Twitter}}
+
+\noindent{\bf{CU\#6 Posteando comentarios en combinaciones}}
+
+\noindent{\bf{CU\#11 Realizando login mediante Google+}}
+
+\noindent{\bf{CU\#15 Accediendo a los comentarios no moderados}}
+
+\noindent{\bf{CU\#16 Moderando comentario}}
+
+\noindent{\bf{CU\#12 Seleccionando el lenguaje que considera ofensivo}}
+
+\noindent{\bf{CU\#13 Puntuando usuarios}}
+
+\noindent{\bf{CU\#14 Haciendo "Me gusta" en un comentario}}
+
+\noindent{\bf{CU\#17 Cargando palabras prohibidas}}
+
+\noindent{\bf{CU\#14 Cargando excepciones}}
+
+\noindent{\bf{Agregar filtro amenazas}}
+
+\noindent{\bf{Agregar filtro discriminación}}
+
+\noindent{\bf{Agregar filtro pornografía}}
+
+\noindent{\bf{Agregar filtro ponies}}
+
+\noindent{\bf{Agregar filtro ironías}}
+
+\noindent{\bf{Agregar filtro malware}}
+
+\noindent{\bf{Agregar filtro a enlaces a categorias previas}}
+
+\noindent{\bf{Agregar filtro configurado por el usuario}}
